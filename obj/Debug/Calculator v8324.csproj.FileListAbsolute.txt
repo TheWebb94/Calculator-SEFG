@@ -1,0 +1,14 @@
+C:\Users\alexw\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\bin\Debug\Calculator v8324.exe.config
+C:\Users\alexw\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\bin\Debug\Calculator v8324.exe
+C:\Users\alexw\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\bin\Debug\Calculator v8324.pdb
+C:\Users\alexw\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.csproj.AssemblyReference.cache
+C:\Users\alexw\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.csproj.CoreCompileInputs.cache
+C:\Users\alexw\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.exe
+C:\Users\alexw\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.pdb
+C:\Users\aw1204\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\bin\Debug\Calculator v8324.exe.config
+C:\Users\aw1204\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\bin\Debug\Calculator v8324.exe
+C:\Users\aw1204\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\bin\Debug\Calculator v8324.pdb
+C:\Users\aw1204\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.csproj.AssemblyReference.cache
+C:\Users\aw1204\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.csproj.CoreCompileInputs.cache
+C:\Users\aw1204\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.exe
+C:\Users\aw1204\OneDrive - Anglia Ruskin University\Year 1\Software Engineering for Games\Versions A1\2\Calculator v8324\obj\Debug\Calculator v8324.pdb
