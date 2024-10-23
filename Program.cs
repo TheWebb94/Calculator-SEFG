@@ -31,6 +31,7 @@ namespace Calculator_app
                 previousAnswer = operationResult;
 
                 continueCalculating = UserInputs.AskToContinue();
+                Console.WriteLine("Git test");
 
             }
         }
@@ -96,6 +97,8 @@ namespace Calculator_app
 
             return result;
         }
+
+        
 
         //Error handling for division by zero errors
         public static bool NumberIsDivisibleByZero(string operator1, double number)
