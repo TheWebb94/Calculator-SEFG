@@ -5,6 +5,8 @@ namespace Calculator_v8324
 {
     internal class UserInputs
     {
+
+        //Gets number from user, branch for either number one or two (DIV/0 error comes back to this method so needed it to be clear which number is being requested)
         public static double GetNumber(double previousAnswer, int updateNum)
         {
             double number;
@@ -26,9 +28,9 @@ namespace Calculator_v8324
                 return number;
             }
             if (double.TryParse(input, out number))
-                {
-                    return number;
-                }
+            {
+                return number;
+            }
             else
                 {
                     Console.WriteLine("Invalid input, please enter a valid number");
@@ -36,6 +38,7 @@ namespace Calculator_v8324
                 }
         }
 
+        //Gets operation from user
         public static string GetOperator()
         {
             while (true)
@@ -52,6 +55,8 @@ namespace Calculator_v8324
             }
             }
         }
+
+        //Asks the user if they want to perform another calculation
         public static bool AskToContinue()
         {
 

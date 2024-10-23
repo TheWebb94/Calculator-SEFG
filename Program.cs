@@ -35,6 +35,7 @@ namespace Calculator_app
             }
         }
 
+        //prints out the expression with result
         private static void OutputExpression(double operationResult)
         {
             Console.Write(num1);
@@ -49,7 +50,7 @@ namespace Calculator_app
             Console.Write($"={operationResult}\n");
 
         }
-
+        //gets all user values
         private static void GetExpressionFromUser()
         {
             num1 = UserInputs.GetNumber(previousAnswer, 1);
@@ -57,12 +58,13 @@ namespace Calculator_app
             if (operation == "root")
             {
                  
-            } else
+            } 
+            else
             {
                 num2 = UserInputs.GetNumber(previousAnswer, 2);
             }
         }
-
+        // perform the calcuulation from user values
         private static double PerformOperation()
         {
             double result = 0;
@@ -95,6 +97,7 @@ namespace Calculator_app
             return result;
         }
 
+        //Error handling for division by zero errors
         public static bool NumberIsDivisibleByZero(string operator1, double number)
         {
             if (operator1 != "/")
