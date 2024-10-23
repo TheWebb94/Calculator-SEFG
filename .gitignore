@@ -1,14 +1,4 @@
-# Ignore build results
-bin/
-obj/
-
-# Ignore user-specific files
-*.user
-*.suo
-
-# Ignore NuGet packages
-packages/
-*.nupkg
-
-# Ignore Visual Studio Code settings
-.vscode/
+bin
+obj
+properties
+README.md
