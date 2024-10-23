@@ -32,7 +32,6 @@ namespace Calculator_app
                 previousAnswer = operationResult;
 
                 continueCalculating = UserInputs.AskToContinue();
-                Console.WriteLine("test change");
                
             }
         }
