@@ -40,9 +40,9 @@ namespace Calculator_v8324
         {
             while (true)
             {
-                Console.WriteLine("Pick one of the following operators: (+ / - * / ^)");
+                Console.WriteLine("Pick one of the following operators: (+ / - * / ^ % root)");
                 string input = Console.ReadLine();
-            if (input == "+" || input == "-" || input == "*" || input == "/" || input == "^")
+            if (input == "+" || input == "-" || input == "*" || input == "/" || input == "^" || input == "%" || input == "root")
             {
                 return input;
             }

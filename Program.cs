@@ -25,21 +25,39 @@ namespace Calculator_app
                 NumberIsDivisibleByZero(operation, num2);
 
                 double operationResult = PerformOperation();
-
-                Console.WriteLine($"{num1}{operation}{num2}={operationResult}");
+                
+                OutputExpression(operationResult);
 
                 previousAnswer = operationResult;
 
                 continueCalculating = UserInputs.AskToContinue();
-               
+
             }
         }
-   
+
+        private static void OutputExpression(double operationResult)
+        {
+            Console.Write(num1);
+            Console.Write(operation);
+            if (operation == "root")
+            {
+                Console.Write(num2);
+            }
+            Console.Write($"={operationResult}\n");
+
+        }
+
         private static void GetExpressionFromUser()
         {
             num1 = UserInputs.GetNumber(previousAnswer, 1);
             operation = UserInputs.GetOperator();
-            num2 = UserInputs.GetNumber(previousAnswer, 2);
+            if (operation == "root")
+            {
+                 
+            } else
+            {
+                num2 = UserInputs.GetNumber(previousAnswer, 2);
+            }
         }
 
         private static double PerformOperation()
@@ -62,6 +80,12 @@ namespace Calculator_app
                     break;
                 case "^":
                     result = Math.Pow(num1, num2);
+                    break;
+                case "%":
+                    result = (num1 / 100) * num2;
+                    break;
+                case "root":
+                    result = Math.Sqrt(num1);
                     break;
             }
 
