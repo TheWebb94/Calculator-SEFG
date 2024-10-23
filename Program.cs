@@ -3,7 +3,6 @@ using System;
 
 namespace Calculator_app
 {
-   // double answer = operationResult;
     internal class Program
     {
         static double num1, num2;
@@ -68,6 +67,7 @@ namespace Calculator_app
 
             return result;
         }
+
         public static bool NumberIsDivisibleByZero(string operator1, double number)
         {
             if (operator1 != "/")
