@@ -41,6 +41,9 @@ namespace Calculator_app
             Console.Write(operation);
             if (operation == "root")
             {
+                
+            } else
+            {
                 Console.Write(num2);
             }
             Console.Write($"={operationResult}\n");
