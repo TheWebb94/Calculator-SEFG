@@ -31,7 +31,6 @@ namespace Calculator_app
                 previousAnswer = operationResult;
 
                 continueCalculating = UserInputs.AskToContinue();
-
             }
         }
 
@@ -47,8 +46,8 @@ namespace Calculator_app
                 Console.Write(num2);
             }
             Console.Write($" = {operationResult}\n");
-
         }
+
         //gets all user values
         private static void GetExpressionFromUser()
         {2342324
@@ -63,6 +62,7 @@ namespace Calculator_app
                 num2 = UserInputs.GetNumber(previousAnswer, 2);
             }
         }
+
         // perform the calcuulation from user values
         private static double PerformOperation()
         {

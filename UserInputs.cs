@@ -1,5 +1,4 @@
-﻿using Calculator_app;
-using System;
+﻿using System;
 
 namespace Calculator_v8324
 {
@@ -36,6 +35,7 @@ namespace Calculator_v8324
         public static string GetOperator()
         {
             Console.WriteLine("Pick one of the following operators: (+ / - * / ^ % root)");
+
             string input = Console.ReadLine();
 
             return ErrorHandling.ValidateOperator(input);
@@ -44,7 +44,6 @@ namespace Calculator_v8324
         //Asks the user if they want to perform another calculation
         public static bool AskToContinue()
         {
-
             Console.WriteLine("Would you like to continue calculating? Please enter 'y' or 'n'");
 
             string input = Console.ReadLine().ToLower();
@@ -60,6 +59,5 @@ namespace Calculator_v8324
             Console.WriteLine("Invalid choice, please enter 'y' or 'n'.");
             return AskToContinue();
         }
-
     }
 }
