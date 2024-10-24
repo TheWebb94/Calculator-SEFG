@@ -22,7 +22,7 @@ namespace Calculator_app
             {
                 GetExpressionFromUser();
 
-                NumberIsDivisibleByZero(operation, num2);
+                ErrorHandling.ValidateDivisor(operation, num2, previousAnswer);
 
                 double operationResult = PerformOperation();
                 
@@ -38,8 +38,7 @@ namespace Calculator_app
         //prints out the expression with result
         private static void OutputExpression(double operationResult)
         {
-            Console.Write(num1);
-            Console.Write(operation);
+            Console.Write(num1 + " " + operation + " ");
             if (operation == "root")
             {
                 
@@ -47,12 +46,12 @@ namespace Calculator_app
             {
                 Console.Write(num2);
             }
-            Console.Write($"={operationResult}\n");
+            Console.Write($" = {operationResult}\n");
 
         }
         //gets all user values
         private static void GetExpressionFromUser()
-        {
+        {2342324
             num1 = UserInputs.GetNumber(previousAnswer, 1);
             operation = UserInputs.GetOperator();
             if (operation == "root")
@@ -95,24 +94,6 @@ namespace Calculator_app
             }
 
             return result;
-        }
-
-        
-
-        //Error handling for division by zero errors
-        public static bool NumberIsDivisibleByZero(string operator1, double number)
-        {
-            if (operator1 != "/")
-            {
-                return true;
-            }
-            else if (number == 0)
-            {
-                Console.WriteLine("Cannot divide number by zero, enter a valid divisor");
-                num2 = UserInputs.GetNumber(previousAnswer, 2);
-                return NumberIsDivisibleByZero(operation, num2);
-            }
-            return true;
         }
     }
 }

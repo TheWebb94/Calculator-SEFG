@@ -9,7 +9,7 @@ namespace Calculator_v8324
         //Gets number from user, branch for either number one or two (DIV/0 error comes back to this method so needed it to be clear which number is being requested)
         public static double GetNumber(double previousAnswer, int updateNum)
         {
-            double number;
+            
             switch (updateNum)
             {
                 case 1:
@@ -21,39 +21,24 @@ namespace Calculator_v8324
                 default:
                     break;
             }
+
             string input = Console.ReadLine();
-            if(input == "ans")
+            if (input == "ans")
             {
-                number = previousAnswer;
-                return number;
+                return previousAnswer;
             }
-            if (double.TryParse(input, out number))
-            {
-                return number;
-            }
-            else
-                {
-                    Console.WriteLine("Invalid input, please enter a valid number");
-                    return GetNumber(previousAnswer, 1);
-                }
+
+            return ErrorHandling.ValidateNumber(previousAnswer, input);
         }
+
 
         //Gets operation from user
         public static string GetOperator()
         {
-            while (true)
-            {
-                Console.WriteLine("Pick one of the following operators: (+ / - * / ^ % root)");
-                string input = Console.ReadLine();
-            if (input == "+" || input == "-" || input == "*" || input == "/" || input == "^" || input == "%" || input == "root")
-            {
-                return input;
-            }
-            else
-            {
-                Console.WriteLine("Invalid operator chosen. Please enter one of the following: +, -, *, / ^");
-            }
-            }
+            Console.WriteLine("Pick one of the following operators: (+ / - * / ^ % root)");
+            string input = Console.ReadLine();
+
+            return ErrorHandling.ValidateOperator(input);
         }
 
         //Asks the user if they want to perform another calculation
