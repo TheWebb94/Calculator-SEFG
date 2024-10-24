@@ -15,6 +15,7 @@ namespace Calculator_v8324
             else
             {
                 Console.WriteLine("Invalid input, please enter a valid number");
+
                 return UserInputs.GetNumber(previousAnswer, 0); 
             }
         }
@@ -29,6 +30,7 @@ namespace Calculator_v8324
             else
             {
                 Console.WriteLine("Invalid operator chosen.");
+
                 return UserInputs.GetOperator(); 
             }
         }
@@ -43,6 +45,7 @@ namespace Calculator_v8324
             else if (number == 0)
             {
                 Console.WriteLine("Cannot divide by zero. Please enter a valid divisor:");
+
                 return UserInputs.GetNumber(previousAnswer, 2); 
             }
 

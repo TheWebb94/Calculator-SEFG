@@ -57,6 +57,7 @@ namespace Calculator_v8324
                 return true;
             }
             Console.WriteLine("Invalid choice, please enter 'y' or 'n'.");
+
             return AskToContinue();
         }
     }

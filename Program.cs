@@ -31,13 +31,15 @@ namespace Calculator_app
                 previousAnswer = operationResult;
 
                 continueCalculating = UserInputs.AskToContinue();
+
             }
         }
 
         //prints out the expression with result
         private static void OutputExpression(double operationResult)
         {
-            Console.Write(num1 + " " + operation + " ");
+            Console.Write(num1 + " " + operation + "");
+
             if (operation == "root")
             {
                 
@@ -45,14 +47,17 @@ namespace Calculator_app
             {
                 Console.Write(num2);
             }
+
             Console.Write($" = {operationResult}\n");
         }
 
         //gets all user values
         private static void GetExpressionFromUser()
-        {2342324
+        {
             num1 = UserInputs.GetNumber(previousAnswer, 1);
+
             operation = UserInputs.GetOperator();
+
             if (operation == "root")
             {
                  
