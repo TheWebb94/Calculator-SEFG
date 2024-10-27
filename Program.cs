@@ -9,12 +9,6 @@ namespace Calculator_app
         static string operation;
         private static double previousAnswer;
 
-                // add comments in for readability
-                // look at enums for constant values (operands)
-
-                //check recursion when caling self is fine?
-
-
         static void Main()
         {
             bool continueCalculating = true;
@@ -35,7 +29,10 @@ namespace Calculator_app
             }
         }
 
-        //prints out the expression with result
+        /// <summary>
+        /// Outputs the calculated expression
+        /// </summary>
+        /// <param name="operationResult"></param>
         private static void OutputExpression(double operationResult)
         {
             Console.Write(num1 + " " + operation + "");
@@ -51,13 +48,15 @@ namespace Calculator_app
             Console.Write($" = {operationResult}\n");
         }
 
-        //gets all user values
+       /// <summary>
+       /// Consolidates the GetNumber method with the GetOperator method for a cleaner main method
+       /// </summary>
         private static void GetExpressionFromUser()
         {
             num1 = UserInputs.GetNumber(previousAnswer, 1);
 
             operation = UserInputs.GetOperator();
-
+            //Only prompts for num2 if root is not being used
             if (operation == "root")
             {
                  
@@ -68,7 +67,10 @@ namespace Calculator_app
             }
         }
 
-        // perform the calcuulation from user values
+        /// <summary>
+        /// Calculates the expression
+        /// </summary>
+        /// <returns></returns>
         private static double PerformOperation()
         {
             double result = 0;

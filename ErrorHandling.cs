@@ -2,9 +2,16 @@
 
 namespace Calculator_v8324
 {
-    //Handles incorrect inputs when user is giving number
+   /// <summary>
+   /// Class for handling of all error conditions
+   /// </summary>
     internal class ErrorHandling
-    {
+    {/// <summary>
+    /// This takes in the value form GetNumber and checks it is a number that can be stored as a double
+    /// </summary>
+    /// <param name="previousAnswer"></param>
+    /// <param name="input"></param>
+    /// <returns></returns>
         public static double ValidateNumber(double previousAnswer, string input)
         {
             double number;
@@ -20,7 +27,11 @@ namespace Calculator_v8324
             }
         }
 
-        //Handles incorrect inputs for operator
+       /// <summary>
+       /// Takes in the value given by GetOperator and checks it is valid
+       /// </summary>
+       /// <param name="input"></param>
+       /// <returns></returns>
         public static string ValidateOperator(string input)
         {
             if (input == "+" || input == "-" || input == "*" || input == "/" || input == "^" || input == "%" || input == "root")
@@ -35,7 +46,13 @@ namespace Calculator_v8324
             }
         }
 
-        //Error handling for division by zero errors
+        /// <summary>
+        /// Takes in operator and num2 to make sure division by zero is not happening, calls GetNumber2 if fails
+        /// </summary>
+        /// <param name="operator1"></param>
+        /// <param name="number"></param>
+        /// <param name="previousAnswer"></param>
+        /// <returns></returns>
         public static double ValidateDivisor(string operator1, double number, double previousAnswer)
         {
             if (operator1 != "/")

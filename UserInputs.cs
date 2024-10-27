@@ -1,11 +1,17 @@
 ﻿using System;
 
 namespace Calculator_v8324
-{
+{/// <summary>
+/// Class for handling of all user inputs
+/// </summary>
     internal class UserInputs
     {
-
-        //Gets number from user, branch for either number one or two (DIV/0 error comes back to this method so needed it to be clear which number is being requested)
+        /// <summary>
+        /// Asks the user to enter a number, prompts for either num1 or num2 depending on second parameter value. Also passes the previousANswer through in case of 'ans' entry
+        /// </summary>
+        /// <param name="previousAnswer"></param>
+        /// <param name="updateNum"></param>
+        /// <returns></returns>
         public static double GetNumber(double previousAnswer, int updateNum)
         {
             
@@ -31,7 +37,10 @@ namespace Calculator_v8324
         }
 
 
-        //Gets operation from user
+        /// <summary>
+        /// Asks the user to enter an operator for the calculation, then calls error handling to validate
+        /// </summary>
+        /// <returns></returns>
         public static string GetOperator()
         {
             Console.WriteLine("Pick one of the following operators: (+ / - * / ^ % root)");
@@ -41,7 +50,10 @@ namespace Calculator_v8324
             return ErrorHandling.ValidateOperator(input);
         }
 
-        //Asks the user if they want to perform another calculation
+        /// <summary>
+        /// Asks the user if they would like to perform another calculation
+        /// </summary>
+        /// <returns></returns>
         public static bool AskToContinue()
         {
             Console.WriteLine("Would you like to continue calculating? Please enter 'y' or 'n'");
